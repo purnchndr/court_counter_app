@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#3F51B5">
+        android:background="#3F51B5"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,35 +20,36 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="#FF9800"
                 android:layout_weight="1"
-                android:orientation="vertical"
+                android:background="#FF9800"
                 android:gravity="center_horizontal"
-                android:paddingBottom="18dp"
-                android:paddingTop="18dp">
+                android:orientation="vertical"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
 
                 <TextView
                     android:id="@+id/textViewA1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
-                    android:textSize="42sp"
-                    android:text="@string/team_a" />
+                    android:text="@string/team_a"
+                    android:textSize="42sp" />
 
                 <TextView
                     android:id="@+id/textViewA2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    android:textSize="32sp"
-                    android:text="0" />
+                    android:layout_margin="6dp"
+                    android:text="0"
+                    android:textSize="96sp" />
+
                 <TextView
                     android:id="@+id/textViewA3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
-                    android:textSize="24sp"
-                    android:text="Numbers: 0" />
+                    android:text="0"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonA1"
@@ -56,8 +57,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:onClick="incementA3"
-                    android:textSize="24sp"
-                    android:text="+3 Points" />
+                    android:text="+3 Points"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonA2"
@@ -65,8 +66,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:onClick="incementA2"
-                    android:textSize="24sp"
-                    android:text="+2 Points" />
+                    android:text="+2 Points"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonA3"
@@ -74,42 +75,46 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:onClick="freeThrowA"
-                    android:textSize="20sp"
-                    android:text="Free Throw" />
+                    android:text="Free Throw"
+                    android:textSize="20sp" />
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="2dp"
+                android:background="@color/teal_700"
+                android:layout_height="match_parent"/>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#E91E63"
+                android:background="#FF9800"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:paddingBottom="18dp"
                 android:paddingTop="18dp"
-                android:gravity="center_horizontal">
+                android:paddingBottom="18dp">
+
                 <TextView
                     android:id="@+id/textViewB1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
-                    android:textSize="42sp"
-                    android:text="Team B" />
+                    android:text="Team B"
+                    android:textSize="42sp" />
 
                 <TextView
                     android:id="@+id/textViewB2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    android:textSize="32sp"
-                    android:text="0" />
+                    android:layout_margin="6dp"
+                    android:text="0"
+                    android:textSize="96sp" />
 
                 <TextView
                     android:id="@+id/textViewB3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
-                    android:textSize="24sp"
-                    android:text="Numbers: 0" />
+                    android:text="0"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonB1"
@@ -117,8 +122,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:onClick="incementB3"
-                    android:textSize="24sp"
-                    android:text="+3 Point" />
+                    android:text="+3 Point"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonB2"
@@ -126,49 +131,48 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:onClick="incementB2"
-                    android:textSize="24sp"
-                    android:text="+2 Point" />
+                    android:text="+2 Point"
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/buttonB3"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="18dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
                     android:onClick="freeThrowB"
-                    android:textSize="20sp"
-                    android:text="Free Throw" />
+                    android:text="Free Throw"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
 
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:onClick="reset"
-            android:text="Reset"
-            android:textSize="32sp" />
-
-        <ImageView
-            android:id="@+id/imageView"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitEnd"
-            android:src="@drawable/hi" />
+            android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+                android:onClick="reset"
+                android:text="Reset"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/hi" />
+
+
+        </RelativeLayout>
 
     </LinearLayout>
-
-    </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
